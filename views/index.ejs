@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Beautiful Web App V1</h1>
+    <p>A modern and responsive web application built with Node.js</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Explored Node.js app using GitHub Actions.</h2>
+      <p>This app is designed to be fast, responsive, and visually appealing.</p>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery">
+      <h2>Photo Gallery</h2>
+      <div class="gallery-grid">
+        <% images.forEach(image => { %>
+          <img src="/images/<%= image %>" alt="<%= image %>">
+        <% }); %>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Beautiful Web App. All rights reserved.</p>
+  </footer>
+</body>
+</html>
